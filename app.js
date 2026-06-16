@@ -9,7 +9,6 @@ const CONFIG = {
     guardarCadaXNumeros: 50000000n,
     maxIteraciones: 500000
 };
-
 if (isMainThread) {    
     let inicio = CONFIG.inicioPorDefecto;
     if (fs.existsSync(CONFIG.archivoProgreso)) {
@@ -152,7 +151,6 @@ if (isMainThread) {
         }
         return { status: 'OK' };
     }
-
     function mapearCiclo(nodoInicio) {
         const ciclo = [];
         let actual = nodoInicio;
